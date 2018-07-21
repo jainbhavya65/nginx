@@ -33,6 +33,11 @@ node {
           sh "docker login -u ${env.DockerHubUser} -p ${env.DockerHubPassword}"
          app.push("${env.BUILD_NUMBER}")
          app.push("latest")
-        }
+        }         
+    }
+    
+    stage('Create Docker'){
+        sh 'docker pull app'
+        sh 'docker run app'
     }
 }
