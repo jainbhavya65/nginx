@@ -35,9 +35,4 @@ node {
          app.push("latest")
         }         
     }
-    
-    stage('Create Docker'){
-        sh 'docker pull jainbhavya65/nginx'
-        sh 'docker run jainbhavya65/nginx'
-    }
 }
