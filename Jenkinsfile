@@ -37,7 +37,7 @@ node {
     }
     
     stage('Create Docker'){
-        sh 'docker pull app'
-        sh 'docker run app'
+        sh 'docker pull jainbhavya65/nginx'
+        sh 'docker run jainbhavya65/nginx'
     }
 }
