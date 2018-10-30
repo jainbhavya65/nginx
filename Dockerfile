@@ -1,2 +1,2 @@
-FROM apache
+FROM alpine
 COPY . /usr/share/nginx/html/
